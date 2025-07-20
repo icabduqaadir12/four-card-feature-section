@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+body main {
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+body main header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+body main header .title {
+  color: hsl(234, 12%, 34%);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+body main header .title span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+body main header .description {
+  max-width: 500px;
+  color: hsl(234, 12%, 34%);
+  font-size: 15px;
+  text-align: center;
+  padding: 0 3em;
+  font-weight: 400;
+}
+body main #cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 2rem;
+  padding: 4rem;
+}
+@media (min-width: 768px) {
+  body main #cards {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+}
+@media (min-width: 1024px) {
+  body main #cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, minmax(110px, 1fr));
+    gap: 2em;
+    padding: 1rem;
+  }
+}
+body main #cards .card {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 768px) {
+  body main #cards .card {
+    width: 100%;
+  }
+}
+body main #cards .card_supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+@media (min-width: 1024px) {
+  body main #cards .card_supervisor {
+    grid-row: 2/4;
+    grid-column: 1/2;
+  }
+}
+body main #cards .card_team {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+@media (min-width: 1024px) {
+  body main #cards .card_team {
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+}
+body main #cards .card_karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+@media (min-width: 1024px) {
+  body main #cards .card_karma {
+    grid-row: 3/5;
+    grid-column: 2/3;
+  }
+}
+body main #cards .card_calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+@media (min-width: 1024px) {
+  body main #cards .card_calculator {
+    grid-row: 2/4;
+    grid-column: 3/4;
+  }
+}
+body main #cards .card_title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: hsl(234, 12%, 34%);
+}
+body main #cards .card_desc {
+  max-width: 280px;
+  font-size: 16px;
+  padding: 0 0 1em;
+  color: hsl(212, 6%, 44%);
+  font-weight: 400;
+}
+body main #cards .card_image {
+  align-self: flex-end;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */

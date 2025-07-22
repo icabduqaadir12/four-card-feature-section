@@ -30,16 +30,26 @@ body main header .title {
   font-size: 1.6rem;
   font-weight: 200;
 }
+@media (min-width: 1024px) {
+  body main header .title {
+    font-size: 1.8rem;
+  }
+}
 body main header .title span {
   display: block;
   font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  body main header .title span {
+    font-size: 1.8rem;
+  }
+}
 body main header .description {
   max-width: 572px;
   color: hsl(234, 12%, 34%);
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
   font-weight: 400;
 }

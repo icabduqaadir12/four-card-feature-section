@@ -43,18 +43,26 @@ body {
                 font-size: 1.6rem;
                 font-weight: 200;
 
+                @media (min-width: 1024px) {
+                    font-size: 1.8rem;
+                }
+
                 span {
                     display: block;
                     font-size: 1.6rem;
                     font-weight: 600;
                     text-align: center;
+
+                     @media (min-width: 1024px) {
+                        font-size: 1.8rem;
+                    }
                 }
             }
 
             .description {
                 max-width: 572px;
                 color: $Grey-500;
-                font-size: 16px;
+                font-size: 17px;
                 text-align: center;
                 // padding: 0 3em;
                 font-weight: 400;

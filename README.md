@@ -49,7 +49,7 @@ Users should be able to:
 - Practiced combining **Grid** for the outer layout with **Flexbox** for internal alignment of card contents.
 - Maintained consistent spacing using SCSS variables and reusable styles.
 
-```
+
 
 ### Continued development
 

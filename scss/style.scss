@@ -29,7 +29,6 @@ body {
     main {
         max-width: 1200px;
         margin-bottom: 20px;
-        // background-color: blue;
 
         header {
             display: flex;
@@ -68,13 +67,11 @@ body {
             gap: 2rem;
             padding: 4rem;
 
-            // Tablet: 3 columns
             @media (min-width: 768px) {
                 grid-template-columns: repeat(2, 1fr);
                 align-items: stretch;
             }
             @media (min-width: 1024px) {
-                // max-width: 1200px;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(4, minmax(110px, 1fr));
                 gap: 2em;
@@ -90,8 +87,6 @@ body {
                 justify-content: space-between;
                 background-color: $White;
                 padding: 2em;
-                // margin-inline-start: 1.5em;
-                // margin-inline-end: 1.5em;
                 border-radius: 5px;
                 box-shadow: 1px 5px 10px rgba(0,0,0,0.15);
 
